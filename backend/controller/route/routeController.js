@@ -1,4 +1,4 @@
-const Route = require("../../model/Route/routeModel");
+const Route = require("../../model/route/routeModel");
 
 //get all Routes
 const getAllRoutes = async (req, res, next) => {
