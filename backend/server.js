@@ -19,6 +19,7 @@ const cors = require("cors");
 
 const corsOptions = {
   origin: "https://buspro-bgjy.vercel.app",
+  exposedHeaders: ["Set-Cookie"],
   credentials: true,
 };
 db();
