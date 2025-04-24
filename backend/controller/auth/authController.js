@@ -9,7 +9,7 @@ const login = async (req, res, next) => {
     const userdata = await User.findOne({ email: email });
     if (userdata && (await comparePasswords(password, userdata.password))) {
       const accessToken = genToken(userdata);
-      res.cookie("authToken", accessToken, { httpOnly: true });
+      res.cookie("authToken", accessToken, { httpOnly: true, secure: true, sameSite: "None" });
       res.status(200).json({
         status: true,
         email: userdata.email,
