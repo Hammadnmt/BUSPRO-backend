@@ -18,7 +18,7 @@ const errorHandler = require("./middleware/errorMiddleware");
 const cors = require("cors");
 
 const corsOptions = {
-  origin: "https://buspro-project.vercel.app",
+  origin: "https://buspro-bgjy.vercel.app/",
   exposedHeaders: ["Set-Cookie"],
   credentials: true,
 };
